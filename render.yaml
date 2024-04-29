@@ -1,12 +1,12 @@
 databases:
-  - name: api_db
+  - name: nextjs-basics-02-api-db
     plan: free
     databaseName: api_db
     user: api_db
 
 services:
   - type: web
-    name: api
+    name: nextjs-basics-02-api
     plan: free
     env: python
     buildCommand: './build.sh'
