@@ -16,7 +16,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class PostSerializer(serializers.ModelSerializer):
-  created_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%SS", read_only=True)
+  created_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
 
   class Meta:
     model = Post
@@ -24,7 +24,7 @@ class PostSerializer(serializers.ModelSerializer):
 
 
 class TaskSerializer(serializers.ModelSerializer):
-  created_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%SS", read_only=True)
+  created_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
 
   class Meta:
     model = Task
